@@ -7,6 +7,32 @@
           null
         ]
       },
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/facades/dog_fact_facade.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/services/dog_fact_service.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/facades/dog_picture_facade.rb": {
         "lines": [
           1,
@@ -17,6 +43,11 @@
           96,
           null,
           null,
+          null,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -25,13 +56,17 @@
           1,
           null,
           1,
+          4,
+          null,
+          null,
+          1,
           2,
           2,
           null,
           null,
           1,
           2,
-          null,
+          2,
           null,
           null
         ]
@@ -92,6 +127,6 @@
         }
       }
     },
-    "timestamp": 1658940315
+    "timestamp": 1658943623
   }
 }
