@@ -1,0 +1,22 @@
+<h2>Register:</h2>
+
+<%= form_with url: register_path, local: true do |form| %>
+
+<p><%= form.label :name, "Enter your name:" %>
+<%= form.text_field :name, id: "Enter your name" %></p>
+
+<p><%= form.label :email, "Enter your Email:" %>
+<%= form.text_field :email, id: "Enter your Email" %></p>
+
+<p><%= form.label :password, "Enter your password:" %>
+<%= form.text_field :password, id: "Enter your password" %></p>
+
+<p><%= form.label :password_confirmation, "Confirm your password:" %>
+<%= form.text_field :password_confirmation, id: "Confirm your password" %></p>
+
+<p><%= form.label :Location, "Enter your Location:" %>
+<%= form.text_field :Location, id: "Enter your Location" %></p>
+
+<%= form.submit "Create User" %>
+
+<% end %>
