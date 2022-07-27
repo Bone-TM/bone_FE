@@ -4,4 +4,5 @@ class DogFactFacade
         json = DogFactService.get_fact
         json.join("','")
     end
+    
 end
