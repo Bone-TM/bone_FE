@@ -35,6 +35,10 @@ gem "faraday"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'dotenv-rails'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-rails_csrf_protection'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
