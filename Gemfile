@@ -59,6 +59,7 @@ group :test do
   gem 'launchy'
   gem 'rspec-rails'
   gem 'simplecov'
+  gem 'rspec_junit_formatter'
 end
 
 
