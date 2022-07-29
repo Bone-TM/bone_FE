@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/register', to: 'users#new'
   get '/auth/:provider/callback', to: 'sessions#omniauth'
 
+  get '/users/dashboard', to: 'users#show'
 end
