@@ -1,32 +1,13 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/helpers/application_helper.rb": {
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/poros/pet.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          6,
-          6,
-          6,
-          6,
-          6,
-          6,
-          6,
-          6,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/poros/user.rb": {
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/poros/pet.rb": {
         "lines": [
           1,
           1,
@@ -38,11 +19,31 @@
           6,
           6,
           6,
+          6,
+          6,
+          null,
           null,
           null
         ]
       },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/facades/dog_fact_facade.rb": {
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/models/user.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/facades/dog_fact_facade.rb": {
         "lines": [
           1,
           null,
@@ -54,7 +55,7 @@
           null
         ]
       },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/services/dog_fact_service.rb": {
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/services/dog_fact_service.rb": {
         "lines": [
           1,
           null,
@@ -69,7 +70,7 @@
           null
         ]
       },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/facades/dog_picture_facade.rb": {
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/facades/dog_picture_facade.rb": {
         "lines": [
           1,
           null,
@@ -87,7 +88,7 @@
           null
         ]
       },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/services/dog_picture_service.rb": {
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/services/dog_picture_service.rb": {
         "lines": [
           1,
           null,
@@ -107,7 +108,7 @@
           null
         ]
       },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/facades/pet_facade.rb": {
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/facades/pet_facade.rb": {
         "lines": [
           1,
           null,
@@ -121,7 +122,7 @@
           null
         ]
       },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/services/pet_service.rb": {
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/services/pet_service.rb": {
         "lines": [
           1,
           null,
@@ -137,21 +138,21 @@
           null
         ]
       },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/facades/user_facade.rb": {
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/facades/user_facade.rb": {
         "lines": [
           1,
           null,
           1,
           1,
           1,
-          5,
+          1,
           null,
           null,
           null,
           null
         ]
       },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/services/user_service.rb": {
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/services/user_service.rb": {
         "lines": [
           1,
           null,
@@ -167,7 +168,7 @@
           null
         ]
       },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/controllers/landing_controller.rb": {
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/controllers/landing_controller.rb": {
         "lines": [
           1,
           null,
@@ -179,13 +180,13 @@
           null
         ]
       },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/controllers/application_controller.rb": {
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/controllers/users_controller.rb": {
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/controllers/users_controller.rb": {
         "lines": [
           1,
           null,
@@ -198,7 +199,7 @@
           null
         ]
       },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/mailers/application_mailer.rb": {
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
@@ -208,25 +209,16 @@
         "branches": {
         }
       },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/models/application_record.rb": {
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/poros/user.rb": {
         "lines": [
           0,
           0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/jobs/application_job.rb": {
-        "lines": [
+          null,
           0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/channels/application_cable/connection.rb": {
-        "lines": [
+          0,
+          0,
+          0,
+          0,
           0,
           0,
           0,
@@ -235,7 +227,45 @@
         "branches": {
         }
       },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/channels/application_cable/channel.rb": {
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/controllers/sessions_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -246,6 +276,6 @@
         }
       }
     },
-    "timestamp": 1658963562
+    "timestamp": 1659054257
   }
 }
