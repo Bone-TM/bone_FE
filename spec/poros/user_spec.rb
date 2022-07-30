@@ -11,7 +11,19 @@ RSpec.describe User do
          :name=>"steve",
          :bio=>"dogs r kewl",
          :email=>"steve@beve.com",
-         :location=>"denver"
+         :location=>"denver",
+         :pets=>
+         [{:attributes=>
+           {
+           :id=>2,
+           :name=>"cat",
+           :breed=>"cocker-spaniel",
+           :sex=>"male",
+           :bio=>"woof",
+           :weight=>19,
+           :age=>5,
+           :user_id=>1}
+         }]
         }
       }
 
