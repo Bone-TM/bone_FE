@@ -7,156 +7,35 @@
           null
         ]
       },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/poros/pet.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          6,
-          6,
-          6,
-          6,
-          6,
-          6,
-          6,
-          6,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/nick/Turing/3mod/projects/bone_FE/app/poros/user.rb": {
         "lines": [
           1,
           1,
           null,
           1,
-          4,
-          4,
-          4,
-          4,
-          4,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
       },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/facades/dog_fact_facade.rb": {
+      "/Users/nick/Turing/3mod/projects/bone_FE/app/poros/pet.rb": {
         "lines": [
           1,
-          null,
-          1,
-          5,
-          5,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/services/dog_fact_service.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          6,
-          null,
-          null,
-          1,
-          6,
-          6,
-          null,
-          null
-        ]
-      },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/facades/dog_picture_facade.rb": {
-        "lines": [
           1,
           null,
           1,
           1,
           1,
-          96,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/services/dog_picture_service.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          4,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/facades/pet_facade.rb": {
-        "lines": [
-          1,
-          null,
           1,
           1,
           1,
-          5,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/services/pet_service.rb": {
-        "lines": [
           1,
-          null,
           1,
-          2,
-          2,
-          null,
-          null,
           1,
-          2,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/facades/user_facade.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/controllers/landing_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          4,
-          null,
           null,
           null,
           null
@@ -170,46 +49,41 @@
           1,
           0,
           null,
-          null
-        ]
-      },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/controllers/users_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
           null,
           null
         ]
       },
-      "/Users/nick/Turing/3mod/projects/bone_FE/app/services/user_service.rb": {
+      "/Users/nick/Turing/3mod/projects/bone_FE/app/facades/pet_facade.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/nick/Turing/3mod/projects/bone_FE/app/controllers/pets_controller.rb": {
         "lines": [
           1,
           null,
           1,
           1,
           1,
-          0,
-          null,
-          null,
-          null,
-          1,
-          1,
           null,
           null,
           1,
           0,
           0,
-          0,
-          null,
           null,
           null,
           null
@@ -234,9 +108,90 @@
         "branches": {
         }
       },
+      "/Users/nick/Turing/3mod/projects/bone_FE/app/facades/user_facade.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/nick/Turing/3mod/projects/bone_FE/app/facades/dog_picture_facade.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/nick/Turing/3mod/projects/bone_FE/app/facades/dog_fact_facade.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/Users/nick/Turing/3mod/projects/bone_FE/app/jobs/application_job.rb": {
         "lines": [
           0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/nick/Turing/3mod/projects/bone_FE/app/controllers/landing_controller.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/nick/Turing/3mod/projects/bone_FE/app/controllers/users_controller.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
           0
         ],
         "branches": {
@@ -246,9 +201,6 @@
         "lines": [
           0,
           0,
-          null,
-          null,
-          null,
           0,
           0,
           0,
@@ -257,17 +209,96 @@
           0,
           0,
           0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/nick/Turing/3mod/projects/bone_FE/app/services/user_service.rb": {
+        "lines": [
           0,
           null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
+          0,
+          0,
+          0,
           null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/nick/Turing/3mod/projects/bone_FE/app/services/dog_fact_service.rb": {
+        "lines": [
+          0,
           null,
+          0,
+          0,
+          0,
           null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/nick/Turing/3mod/projects/bone_FE/app/services/pet_service.rb": {
+        "lines": [
+          0,
           null,
+          0,
+          0,
+          0,
+          0,
           null,
+          0,
+          0,
+          0,
+          0,
           null,
-          null
+          0,
+          0,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/nick/Turing/3mod/projects/bone_FE/app/services/dog_picture_service.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
         ],
         "branches": {
         }
@@ -293,6 +324,6 @@
         }
       }
     },
-    "timestamp": 1659198631
+    "timestamp": 1659211715
   }
 }
