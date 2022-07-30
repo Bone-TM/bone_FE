@@ -1,0 +1,16 @@
+<h1>Update <%= @user.name%>'s Info</h1>
+
+<%= form_with url: "/users/dashboard", local: true do |f| %>
+
+<p><%= f.label :name, "Name:" %>
+<%= f.text_field :name, value: @user.name%></p>
+
+<p><%= f.label :bio, "Bio:" %>
+<%= f.text_field :bio, value: @user.bio%></p>
+
+<p><%= f.label :location, "Location:" %>
+<%= f.text_field :location, value: @user.location%></p>
+
+<%= f.submit "Update User" %>
+
+<% end %>
