@@ -9,8 +9,7 @@ RSpec.describe 'User Show Page' do
 
   it "shows user details" do
     visit users_dashboard_path
-save_and_open_page
     expect(page).to have_content("Jim")
-    expect(page).to have_content("isuck@gmail.com")  
+    expect(page).to have_content("isuck@gmail.com")
   end
 end
