@@ -11,7 +11,11 @@ RSpec.describe "Pet Show Page" do
 
   it "shows details about specific pet" do
     visit "/pets/#{@pet.id}"
-    save_and_open_page
+    expect(page).to have_content("Biography: Bork")
+    expect(page).to have_content("Weight: 15")
+    expect(page).to have_content("Age: 5")
+    expect(page).to have_content("Gender: Male")
+    expect(page).to have_content("Breed: beagle")
   end
 
 end
