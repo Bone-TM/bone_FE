@@ -9,7 +9,9 @@ RSpec.describe 'User Show Page' do
 
   it "shows user details" do
     visit users_dashboard_path
-    expect(page).to have_content("Jim")
-    expect(page).to have_content("isuck@gmail.com")
+    expect(page).to have_content("Jim's Dashboard")
+    expect(page).to have_content("Email: isuck@gmail.com")
+    expect(page).to have_button("Add Dog to Profile")
+    expect(page).to have_button("Update User Info")
   end
 end
