@@ -1,2 +1,5 @@
-<h3><%= @user.name %></h3>
-<h3><%= @user.email %></h3>
+<h1><%= @user.name %>'s Dashboard</h1>
+<h3>Email: <%= @user.email %></h3>
+<br>
+<%= button_to "Add Dog to Profile", users_pets_new_path, method: :get %>
+<%= button_to "Update User Info", users_update_path, method: :get %>
