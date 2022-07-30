@@ -2,7 +2,9 @@ class UserService
 
   def self.get_users
     response = connection.get('users')
-    data = JSON.parse(response.body, symbolize_names: true)[:data]
+    if !response.body.empty?
+      data = JSON.parse(response.body, symbolize_names: true)[:data]
+    end
   end
 
   def self.connection
