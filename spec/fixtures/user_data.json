@@ -1,0 +1,22 @@
+{ "data":
+  [
+  {"id": 1,
+  "attributes":
+    {
+      "name": "steven",
+      "bio": "I like dogs",
+      "email": "this@test.com",
+      "location": "Denver"
+    }
+  },
+  { "id": 2,
+    "attributes":
+    {
+      "name": "thomas",
+      "bio": "I like dogs",
+      "email": "this@test.com",
+      "location": "Denver"
+    }
+  }
+  ]
+}

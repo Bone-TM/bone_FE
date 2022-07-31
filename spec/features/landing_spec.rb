@@ -25,5 +25,4 @@ RSpec.describe 'Landing Page' do
     click_link "Register New User"
     expect(current_path).to eq(register_path)
   end
-
 end

@@ -5,6 +5,11 @@ class PetService
     data = JSON.parse(response.body, symbolize_names: true)[:data]
   end
 
+  def self.get_pet(pet_id)
+    response = connection.get("pets/#{pet_id}")
+    data = JSON.parse(response.body, symbolize_names: true)[:data]
+  end
+
   def self.connection
     Faraday.new(url: 'https://bone-back.herokuapp.com/api/v1/')
   end

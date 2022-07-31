@@ -4,6 +4,11 @@ Rails.application.routes.draw do
 
   get '/login', to: "users#login"
   get '/register', to: 'users#new'
-  get '/auth/:provider/callback', to: 'sessions#omniauth'
+  get 'users/update', to: 'users#update'
+  get '/users/dashboard', to: 'users#show'
 
+  get 'users/pets/new', to: 'pets#new'
+  get 'pets/:id', to: 'pets#show'
+
+  get '/auth/:provider/callback', to: 'sessions#omniauth'
 end

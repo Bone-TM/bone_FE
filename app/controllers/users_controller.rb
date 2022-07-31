@@ -1,9 +1,11 @@
 class UsersController < ApplicationController
 
-  def login
+  def show
+    @user = current_user
   end
 
-  def new
+  def update
+    @user = current_user
   end
 
 end
