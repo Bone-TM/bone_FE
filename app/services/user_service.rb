@@ -18,4 +18,8 @@ class UserService
     end
   end
 
+  def self.find_user(email)
+    response = connection.get("users/find?email=#{email}")
+    data = JSON.parse(response.body, symbolize_names: true)[:data]
+  end
 end

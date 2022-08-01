@@ -16,4 +16,12 @@ RSpec.describe "Users API" do
       expect(user[:attributes][:location]).to be_a String
     end
   end
+
+  it "can retrieve a user by email" do
+    user = UserService.find_user("nickjacobsatc@gmail.com")
+    
+    expect(user[:attributes]).to include :name, :bio, :email, :location, :pets
+    expect(user[:attributes][:name]).to be_a String
+    expect(user[:attributes][:email]).to be_a String   
+  end
 end
