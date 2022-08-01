@@ -1,5 +1,10 @@
 class PetsController < ApplicationController
 
+  def index
+    @user = current_user
+    @pets = PetFacade.create_pets
+  end
+  
   def show
     @user = current_user
     @pet = PetFacade.create_pet(params[:id])

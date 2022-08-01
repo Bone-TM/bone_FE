@@ -3,12 +3,12 @@ Rails.application.routes.draw do
   root "landing#index"
 
   get '/login', to: "users#login"
-  get '/register', to: 'users#new'
   get 'users/update', to: 'users#update'
   get '/users/dashboard', to: 'users#show'
-
+  get '/auth/:provider/callback', to: 'users#new'
   get 'users/pets/new', to: 'pets#new'
+  get '/pets', to: 'pets#index'
   get 'pets/:id', to: 'pets#show'
 
-  get '/auth/:provider/callback', to: 'sessions#omniauth'
+  # get '/auth/:provider/callback', to: 'sessions#omniauth'
 end

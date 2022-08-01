@@ -1,11 +1,13 @@
 <center>
+<body style="background-image: url('https://i.imgur.com/2tOTrmY.png');">
 
-<%= link_to "Home", root_path, method: :get %>
-<%= link_to "Login", login_path, method: :get %>
-<%= link_to "Register New User", register_path, method: :get %>
-<br>
+<%= image_tag("https://i.imgur.com/eJaAlMg.png") %>
 
-<p><b>Random Dog Fact: </b></p>
-<%= @fact %>
+<div class="card bg-light mb-3" style="max-width: 38rem;">
+  <div class="card-header">Random Dog Fact:</div>
+  <div class="card-body">
+    <p class="card-text"><%= @fact %></p>
+  </div>
+</div>
 
 </center>

@@ -1,0 +1,8 @@
+<h1>All Pets</h1>
+
+<% @pets.each do |pet| %>
+  <p> <%= link_to "#{pet.name}", "/pets/#{pet.id}", method: :get  %> </p>
+  <% @picture = DogPictureFacade.create_breed_image(pet.breed)%>
+  <p> <%= image_tag(@picture) %> </p>
+  <br>
+<% end %>
