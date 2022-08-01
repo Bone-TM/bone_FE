@@ -13,4 +13,8 @@ RSpec.describe "User Facade" do
     expect(users.first.name).to be_a String
     expect(users.last.location).to be_a String
   end
+
+  it "returns a user object" do
+    
+  end
 end
