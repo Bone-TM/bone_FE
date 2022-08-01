@@ -15,6 +15,13 @@ RSpec.describe "User Facade" do
   end
 
   it "returns a user object" do
-    
+    json = JSON.parse(File.read('./spec/fixtures/find_user.json'), symbolize_names: true)
+    user = User.new(json[:data])
+    allow(UserFacade).to receive(:find_user).and_return(user)
+
+    expect(user).to be_a User
+    expect(user.id).to be_a String
+    expect(user.name).to eq("Nicholas Jacobs")
+    expect(user.email).to eq("nickjacobsatc@gmail.com")
   end
 end

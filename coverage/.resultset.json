@@ -7,55 +7,48 @@
           null
         ]
       },
-      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/services/user_service.rb": {
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/poros/user.rb": {
         "lines": [
           1,
+          1,
           null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
           1,
           0,
-          0,
-          0,
           null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
           null,
           null
         ]
       },
       "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/facades/user_facade.rb": {
         "lines": [
-          0,
+          1,
           null,
-          0,
-          0,
-          0,
+          1,
           0,
           0,
           0,
           null,
-          0,
-          0,
+          null,
+          null,
+          1,
           0,
           0,
           null,
-          0
-        ],
-        "branches": {
-        }
+          null,
+          null
+        ]
       },
       "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/facades/dog_picture_facade.rb": {
         "lines": [
@@ -128,32 +121,6 @@
           0,
           0,
           null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/poros/user.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
           0
         ],
         "branches": {
@@ -239,6 +206,37 @@
         "branches": {
         }
       },
+      "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/services/user_service.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/Users/sababhamidipati/turing_work/3mod/projects/bone_FE/app/services/dog_fact_service.rb": {
         "lines": [
           0,
@@ -302,6 +300,6 @@
         }
       }
     },
-    "timestamp": 1659386924
+    "timestamp": 1659387546
   }
 }
