@@ -3,6 +3,8 @@
 <% @pets.each do |pet| %>
   <p> <%= link_to "#{pet.name}", "/pets/#{pet.id}", method: :get  %> </p>
   <% @picture = DogPictureFacade.create_breed_image(pet.breed)%>
+  <% if @picture != "Breed not found (master breed does not exist)" %>
   <p> <%= image_tag(@picture) %> </p>
+  <% end %>
   <br>
 <% end %>
