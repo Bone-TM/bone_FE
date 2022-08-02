@@ -11,8 +11,19 @@ RSpec.describe User do
          :name=>"steve",
          :bio=>"dogs r kewl",
          :email=>"steve@beve.com",
-         :password_digest=>"sinoeingmeixnfrx88",
-         :location=>"denver"
+         :location=>"denver",
+         :pets=>
+         [{:attributes=>
+           {
+           :id=>2,
+           :name=>"cat",
+           :breed=>"cocker-spaniel",
+           :sex=>"male",
+           :bio=>"woof",
+           :weight=>19,
+           :age=>5,
+           :user_id=>1}
+         }]
         }
       }
 
@@ -21,7 +32,6 @@ RSpec.describe User do
     expect(user.name).to eq(user_data[:attributes][:name])
     expect(user.bio).to eq(user_data[:attributes][:bio])
     expect(user.email).to eq(user_data[:attributes][:email])
-    expect(user.password_digest).to eq(user_data[:attributes][:password_digest])
     expect(user.location).to eq(user_data[:attributes][:location])
     expect(user.id).to eq(user_data[:id])
   end
