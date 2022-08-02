@@ -1,6 +1,6 @@
 <h1>Update <%= @user.name%>'s Info</h1>
 
-<%= form_with url: "/users/dashboard", local: true do |f| %>
+<%= form_with url: users_update_path, method: :get, local: true do |f| %>
 
 <p><%= f.label :name, "Name:" %>
 <%= f.text_field :name, value: @user.name%></p>

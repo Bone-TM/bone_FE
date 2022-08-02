@@ -6,6 +6,15 @@ class UsersController < ApplicationController
 
   def update
     @user = current_user
+    user_data = {}
+    user_data[:bio] = params[:bio]
+    user_data[:location] = params[:location]
+    UserService.update_user(@user.id, user_data)
+    redirect_to users_dashboard_path
+  end
+
+  def edit
+    @user = current_user
   end
 
   def new
