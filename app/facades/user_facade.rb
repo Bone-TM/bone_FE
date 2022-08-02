@@ -7,4 +7,9 @@ class UserFacade
     end
   end
 
+  def self.find_user(email)
+    user_data = UserService.find_user(email)
+      User.new(user_data)
+  end 
+
 end

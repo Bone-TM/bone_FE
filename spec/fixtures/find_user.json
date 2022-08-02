@@ -1,0 +1,14 @@
+{
+    "data": {
+        "id": "6",
+        "type": "user",
+        "attributes": {
+            "name": "Nicholas Jacobs",
+            "bio": null,
+            "email": "nickjacobsatc@gmail.com",
+            "location": null,
+            "pets": [],
+            "id": 6
+        }
+    }
+}
