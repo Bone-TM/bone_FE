@@ -20,11 +20,11 @@ RSpec.describe "User Update Page" do
   it "can link to a user update page" do
     visit users_dashboard_path
     click_button "Update User Info"
-    expect(current_path).to eq("/users/update")
+    expect(current_path).to eq("/users/edit")
   end
 
   it "shows user's name and text fields for additional attributes" do
-    visit users_update_path
+    visit users_edit_path
     expect(page).to have_content("Update Jim's Info")
     expect(page).to have_content("Name:")
     expect(page).to have_content("Bio:")

@@ -24,4 +24,8 @@ RSpec.describe "Users API" do
     expect(user[:attributes][:name]).to be_a String
     expect(user[:attributes][:email]).to be_a String   
   end
+
+  xit "can update a user profile" do
+    user = UserService.update_user()
+  end
 end

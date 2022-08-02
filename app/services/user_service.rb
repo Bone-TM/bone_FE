@@ -22,4 +22,11 @@ class UserService
     response = connection.get("users/find?email=#{email}")
     data = JSON.parse(response.body, symbolize_names: true)[:data]
   end
+
+  def self.update_user(id, user_data)
+    response = connection.patch("users/#{id}") do |user|
+      user.params[:bio] = user_data[:bio]
+      user.params[:location] = user_data[:location]
+    end
+  end
 end
