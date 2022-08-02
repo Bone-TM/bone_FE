@@ -18,8 +18,11 @@
               <%= link_to "Home", root_path, method: :get, class: "nav-item nav-link" %>
             </div>
             <div class="navbar-nav ms-auto">
+                <% if current_user  %>
                 <%= link_to "Logout", logout_path, method: :delete, class: "nav-item nav-link"  %>
+                <% else %>
                 <%= link_to "Login", '/auth/google_oauth2', method: :post, class: "nav-item nav-link"  %>
+                <% end %>
             </div>
         </div>
     </div>
