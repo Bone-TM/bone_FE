@@ -11,5 +11,4 @@ class UserFacade
     user_data = UserService.find_user(email)
       User.new(user_data)
   end 
-
 end
