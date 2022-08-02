@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'users/pets/new', to: 'pets#new'
   get '/pets', to: 'pets#index'
   get 'pets/:id', to: 'pets#show'
+  delete '/logout', to: 'sessions#destroy'
 
   # get '/auth/:provider/callback', to: 'sessions#omniauth'
 end
