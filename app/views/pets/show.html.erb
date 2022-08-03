@@ -1,5 +1,4 @@
 <h2><%= @pet.name %>'s Details: </h2>
-
 <%= image_tag(@picture)%>
 
 <p>Biography: <%= @pet.bio %></p>
@@ -7,3 +6,6 @@
 <p>Gender: <%= @pet.sex %></p>
 <p>Age: <%= @pet.age %></p>
 <p>Weight: <%= @pet.weight %></p>
+
+<h6> You can contact this person at the email below </h6>
+<%= @pet_user.email %>

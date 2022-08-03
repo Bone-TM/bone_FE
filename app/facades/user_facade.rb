@@ -12,8 +12,8 @@
       User.new(user_data)
   end 
 
-  # def self.find_user_by_id(id)
-  #   user_data = UserService.find_user_by_id(id)
-  #     User.new(user_data)
-  # end
+  def self.find_user_by_id(id)
+    user_data = UserService.find_user_by_id(id)
+      User.new(user_data)
+  end
 end

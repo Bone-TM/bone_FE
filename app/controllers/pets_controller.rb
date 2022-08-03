@@ -9,7 +9,7 @@ class PetsController < ApplicationController
     @user = current_user
     @pet = PetFacade.create_pet(params[:id])
     #  binding.pry
-    # @pet_user = UserFacade.find_user_by_id(@pet.user_id)
+    @pet_user = UserFacade.find_user_by_id(@pet.user_id)
     @picture = DogPictureFacade.create_breed_image(@pet.breed)
   end
 
