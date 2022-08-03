@@ -11,5 +11,4 @@ class PetFacade
     pet_data = PetService.get_pet(id)
     Pet.new(pet_data)
   end
-
 end

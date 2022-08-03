@@ -16,6 +16,9 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ml-auto">
               <%= link_to "Home", root_path, method: :get, class: "nav-item nav-link" %>
+              <% if current_user %>
+              <%= link_to "Dashboard", users_dashboard_path, method: :get, class: "nav-item nav-link" %>
+              <% end %>
             </div>
             <div class="navbar-nav ms-auto">
                 <% if current_user  %>
