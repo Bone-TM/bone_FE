@@ -8,8 +8,9 @@
 
 <h4>Registered Pets:</h4>
 <% @user.pets.each do |pet|%>
-<p> <b> <%= link_to "View Details", "/pets/#{pet.id}", method: :get %> </b> </p>
+<h5> <%= pet.name %> </h5>
 <%@picture = DogPictureFacade.create_breed_image(pet.breed)%>
 <%= image_tag(@picture)%>
-
+<p> <b> <%= link_to "View Details", "/pets/#{pet.id}", method: :get %> </b> </p>
 <% end %>
+<center>
