@@ -28,4 +28,12 @@ RSpec.describe "Users API" do
   xit "can update a user profile" do
     user = UserService.update_user()
   end
+
+  it "can find a user by id" do
+    user = UserService.find_user_by_id(1)
+
+    expect(user[:attributes]).to include :name, :bio, :email, :location, :pets
+    expect(user[:attributes][:name]).to be_a String
+    expect(user[:attributes][:email]).to be_a String   
+  end
 end

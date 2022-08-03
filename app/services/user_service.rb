@@ -29,4 +29,9 @@ class UserService
       user.params[:location] = user_data[:location]
     end
   end
+
+  def self.find_user_by_id(id)
+    response = connection.get("users/#{id}")
+    data = JSON.parse(response.body, symbolize_names: true)[:data]
+  end
 end
