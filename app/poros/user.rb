@@ -7,7 +7,7 @@ class User
     @bio = user_data[:attributes][:bio]
     @email = user_data[:attributes][:email]
     @location = user_data[:attributes][:location]
-    if !user_data[:attributes][:pets].empty?
+    if !user_data[:attributes][:pets].nil?
       @pets = user_pets(user_data)
     end 
   end
