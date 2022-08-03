@@ -1,7 +1,6 @@
 <h1>Add a Dog to <%=@user.name%>'s Family</h1>
 
-<%= form_with url: users_dashboard_path, local: true do |form| %>
-
+<%= form_with url: pets_create_path, method: :get, local: true do |form| %>
 <p><%= form.label :name, "Pet's Name:" %>
 <%= form.text_field :name, id: "Pet's Name" %></p>
 
@@ -22,6 +21,6 @@
 
 <%= form.hidden_field :user_id, value: @user.id %>
 
-<%= form.submit "Create User" %>
+<%= form.submit "Create Pet" %>
 
 <% end %>
