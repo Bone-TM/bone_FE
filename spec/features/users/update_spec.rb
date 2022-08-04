@@ -30,4 +30,12 @@ RSpec.describe "User Update Page" do
     expect(page).to have_button("Update User")
   end
 
+  it "can update a users bio and location" do
+    visit users_edit_path
+    fill_in :bio, with: "hello"
+    fill_in :location, with: "Datyon, OH"
+    click_on "Update User"
+    expect(current_path).to eq(users_dashboard_path)
+  end
+
 end
