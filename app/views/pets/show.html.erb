@@ -1,9 +1,19 @@
-<h2><%= @pet.name %>'s Details: </h2>
+<br><br><br><br>
+<center>
 
-<%= image_tag(@picture)%>
+  <div class="card" style="width: 30rem;">
+    <img class="card-img-top" src=<%= @picture %> alt="Card image cap" >
+    <div class="card-body">
+      <h5 class="card-title"><%= @pet.name.capitalize %></h5>
+      <p class="card-text">
+        <p>Biography: <%= @pet.bio %></p>
+        <p>Breed: <%= @pet.breed %></p>
+        <p>Gender: <%= @pet.sex %></p>
+        <p>Age: <%= @pet.age %></p>
+        <p>Weight: <%= @pet.weight %>
+      </p>
+      <a href="/pets" class="btn btn-primary">Return to all pets</a>
+    </div>
+  </div><br>
 
-<p>Biography: <%= @pet.bio %></p>
-<p>Breed: <%= @pet.breed %></p>
-<p>Gender: <%= @pet.sex %></p>
-<p>Age: <%= @pet.age %></p>
-<p>Weight: <%= @pet.weight %></p>
+</center>

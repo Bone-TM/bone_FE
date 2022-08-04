@@ -1,27 +1,25 @@
 <h1>Add a Dog to <%=@user.name%>'s Family</h1>
 
 <%= form_with url: users_dashboard_path, local: true do |form| %>
+  <%= form.label :name, "Pet's Name:" %>
+  <%= form.text_field :name, id: "Pet's Name" %><br>
 
-<p><%= form.label :name, "Pet's Name:" %>
-<%= form.text_field :name, id: "Pet's Name" %></p>
+  <%= form.label :bio, "Pet's Biography:" %>
+  <%= form.text_field :bio, id: "Pet's Biography" %><br>
 
-<p><%= form.label :bio, "Pet's Biography:" %>
-<%= form.text_field :bio, id: "Pet's Biography" %></p>
+  <%= form.label :weight, "Pet's Weight(lbs):" %>
+  <%= form.number_field :weight, id: "Pet's Weight" %><br>
 
-<p><%= form.label :weight, "Pet's Weight:" %>
-<%= form.number_field :weight, id: "Pet's Weight" %></p>
+  <%= form.label :age, "Pet's Age:" %>
+  <%= form.number_field :age, id: "Pet's Age" %><br>
 
-<p><%= form.label :age, "Pet's Age:" %>
-<%= form.number_field :age, id: "Pet's Age" %></p>
+  <%= form.label :sex, "Pet's Sex:" %>
+  <%= form.select :sex, options_for_select(["Male", "Female", "Other"]) %><br>
 
-<p><%= form.label :sex, "Pet's Sex:" %>
-<%= form.select :sex, options_for_select(["Male", "Female", "Other"]) %></p>
+  <%= form.label :breed, "Pet's Breed:" %>
+  <%= form.select :breed, options_for_select(@breeds) %><br>
 
-<p><%= form.label :breed, "Pet's Breed:" %>
-<%= form.select :breed, options_for_select(@breeds) %></p>
+  <%= form.hidden_field :user_id, value: @user.id %>
 
-<%= form.hidden_field :user_id, value: @user.id %>
-
-<%= form.submit "Create User" %>
-
+  <%= form.submit "Create Pet" %>
 <% end %>
