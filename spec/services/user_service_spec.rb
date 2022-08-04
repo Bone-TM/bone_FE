@@ -4,7 +4,7 @@ RSpec.describe "Users API" do
 
   it "can retrieve all users from API" do
     users = UserService.get_users
-    
+
     if !users.nil?
       user = users.first
       expect(users).to be_a Array
@@ -19,14 +19,10 @@ RSpec.describe "Users API" do
 
   it "can retrieve a user by email" do
     user = UserService.find_user("nickjacobsatc@gmail.com")
-    
+
     expect(user[:attributes]).to include :name, :bio, :email, :location, :pets
     expect(user[:attributes][:name]).to be_a String
-    expect(user[:attributes][:email]).to be_a String   
-  end
-
-  xit "can update a user profile" do
-    user = UserService.update_user()
+    expect(user[:attributes][:email]).to be_a String
   end
 
   it "can find a user by id" do
@@ -34,6 +30,6 @@ RSpec.describe "Users API" do
 
     expect(user[:attributes]).to include :name, :bio, :email, :location, :pets
     expect(user[:attributes][:name]).to be_a String
-    expect(user[:attributes][:email]).to be_a String   
+    expect(user[:attributes][:email]).to be_a String
   end
 end

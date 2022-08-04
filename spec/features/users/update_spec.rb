@@ -25,9 +25,7 @@ RSpec.describe "User Update Page" do
 
   it "shows user's name and text fields for additional attributes" do
     visit users_edit_path
-    expect(page).to have_content("Update Jim's Info")
-    expect(page).to have_content("Name:")
-    expect(page).to have_content("Bio:")
+    expect(page).to have_content("Biography:")
     expect(page).to have_content("Location:")
     expect(page).to have_button("Update User")
   end
