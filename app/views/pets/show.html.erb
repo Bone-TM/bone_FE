@@ -11,12 +11,12 @@
         <p>Gender: <%= @pet.sex %></p>
         <p>Age: <%= @pet.age %></p>
         <p>Weight: <%= @pet.weight %>
-      </p>
+        <h5> You can contact the owner of <%=@pet.name%> at: </h5>
+        <b><%= @pet_user.email %></b><br><br>
       <a href="/pets" class="btn btn-primary">Return to all pets</a>
     </div>
   </div><br>
 
-<h5> You can contact the owner of <%=@pet.name%> at: </h5>
-<b><%= @pet_user.email %></b>
+
 
 </center>
