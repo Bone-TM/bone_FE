@@ -24,13 +24,4 @@ RSpec.describe "User Facade" do
     expect(user.name).to eq("Nicholas Jacobs")
     expect(user.email).to eq("nickjacobsatc@gmail.com")
   end
-
-  it "can create a user" do
-    json = JSON.parse(File.read('./spec/fixtures/find_user.json'), symbolize_names: true)
-    user = User.new(user[:data])
-    allow(UserFacade).to receive(:create_users).and_return(user)
-
-    expect(user_created.name).to eq("Nicholas Jacobs")
-    expect(user_created.email).to eq("nickjacobsatc@gmail.com")
-  end
 end
