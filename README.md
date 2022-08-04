@@ -134,6 +134,7 @@ $ rails s
   <img src="https://img.shields.io/badge/postico-4169E1.svg?&style=for-the-badge&logo=Postico&logoColor=white" />
   <img src="https://img.shields.io/badge/-Neovim-brightgreen?style=for-the-badge&logo=neovim" />
   <img src="https://img.shields.io/badge/-Emacs-lightgrey?style=for-the-badge&logo=spacemacs" />
+  <img src="https://img.shields.io/badge/-MSWord-blue?style=for-the-badge&logo=microsoftword" />
 </p>
 
 ### Gems
