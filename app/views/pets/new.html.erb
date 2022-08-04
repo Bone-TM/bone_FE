@@ -1,25 +1,41 @@
-<h1>Add a Dog to <%=@user.name%>'s Family</h1>
-
-<%= form_with url: users_dashboard_path, local: true do |form| %>
-  <%= form.label :name, "Pet's Name:" %>
-  <%= form.text_field :name, id: "Pet's Name" %><br>
-
-  <%= form.label :bio, "Pet's Biography:" %>
-  <%= form.text_field :bio, id: "Pet's Biography" %><br>
-
-  <%= form.label :weight, "Pet's Weight(lbs):" %>
-  <%= form.number_field :weight, id: "Pet's Weight" %><br>
-
-  <%= form.label :age, "Pet's Age:" %>
-  <%= form.number_field :age, id: "Pet's Age" %><br>
-
-  <%= form.label :sex, "Pet's Sex:" %>
-  <%= form.select :sex, options_for_select(["Male", "Female", "Other"]) %><br>
-
-  <%= form.label :breed, "Pet's Breed:" %>
-  <%= form.select :breed, options_for_select(@breeds) %><br>
-
-  <%= form.hidden_field :user_id, value: @user.id %>
-
-  <%= form.submit "Create Pet" %>
-<% end %>
+<div id="Register">
+    <div class="container">
+      <%= form_with url: pets_create_path, method: :get, local: true do |form| %>
+        <div class="row">
+          <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card border-0 shadow rounded-3 my-5">
+              <div class="card-body p-4 p-sm-5">
+                <h5 class="card-title text-center mb-5 fw-light fs-5">Register Your Pet</h5>
+                <div class="form-floating mb-3">
+                  <%= form.text_field :name, id: "Pet's Name", class: "form-control" %>
+                  <%= form.label :name, "Pet's Name" %>
+                </div>
+                <div class="form-floating mb-3">
+                  <%= form.text_field :bio, id: "Pet's Biography", class: "form-control" %>
+                  <%= form.label :bio, "Pet's Biography" %>
+                </div>
+                <div class="form-floating mb-3">
+                  <%= form.number_field :weight, id: "Pet's Weight", class: "form-control" %>
+                  <%= form.label :weight, "Pet's Weight" %>
+                </div>
+                <div class="form-floating mb-3">
+                  <%= form.number_field :age, id: "Pet's Age", class: "form-control" %>
+                  <%= form.label :age, "Pet's Age" %>
+                </div>
+                  <%= form.label :sex, "Pet's Sex" %>
+                  <%= form.select :sex, options_for_select(["Male", "Female", "Other"], class: "form-control") %>
+                  <br><br>
+                  <%= form.label :breed, "Pet's Breed" %>
+                  <%= form.select :breed, options_for_select(@breeds), class: "form-control" %>
+                  <br><br>
+                <div class="d-grid">
+                  <%= form.submit "Create Pet", class: "btn btn-primary btn-login text-uppercase fw-bold"%>
+                </div>
+                <hr class="my-4">
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+</div>
