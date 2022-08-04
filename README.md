@@ -132,8 +132,8 @@ $ rails s
    <img src="https://img.shields.io/badge/Atom-66595C.svg?&style=for-the-badge&logo=atom&logoColor=white" /><br />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1.svg?&style=for-the-badge&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/postico-4169E1.svg?&style=for-the-badge&logo=Postico&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Neovim-brightgreen?style=for-the-badge&logo=neovim />
-  <img src="https://img.shields.io/badge/-Emacs-lightgrey?style=for-the-badge&logo=appveyor" />
+  <img src="https://img.shields.io/badge/-Neovim-brightgreen?style=for-the-badge&logo=neovim" />
+  <img src="https://img.shields.io/badge/-Emacs-lightgrey?style=for-the-badge&logo=spacemacs" />
 </p>
 
 ### Gems
