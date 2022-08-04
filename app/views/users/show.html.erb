@@ -55,13 +55,16 @@
 
 <br>
 
-<h1 class="display-6" style="color:#FFFFFF">Your Registered Pets: </h1>
+<h1 class="display-6" style="color:#FFFFFF">Your Registered Pets: </h1><br>
+
 
 <% @user.pets.each do |pet|%>
-  <%= link_to "View Details", "/pets/#{pet.id}", method: :get %>
-  <%@picture = DogPictureFacade.create_breed_image(pet.breed)%>
-  <%= image_tag(@picture)%>
+<%@picture = DogPictureFacade.create_breed_image(pet.breed)%>
+<div class="card" style="width: 30rem;">
+  <img class="card-img-top" src=<%= @picture %> alt="Card image cap" >
+  <div class="card-body">
+    <h5 class="card-title"><%= pet.name.capitalize %></h5>
+    <a href="/pets/<%=pet.id%>" class="btn btn-primary">View Details</a>
+  </div>
+</div><br>
 <% end %>
-<center>
-
-</center>
