@@ -1,6 +1,9 @@
-<h1>All Pets</h1>
-
 <center>
+<div style= "color:#FFFFFF" >
+<h1>All Pets:</h1>
+<hr><br>
+</div>
+
 
   <% @pets.each do |pet| %>
     <% @picture = DogPictureFacade.create_breed_image(pet.breed) %>
