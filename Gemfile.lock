@@ -83,7 +83,7 @@ GEM
     dotenv-rails (2.8.1)
       dotenv (= 2.8.1)
       railties (>= 3.2)
-    erubi (1.10.0)
+    erubi (1.11.0)
     execjs (2.8.1)
     faraday (2.4.0)
       faraday-net_http (~> 2.0)
@@ -122,6 +122,8 @@ GEM
     multi_json (1.15.0)
     multi_xml (0.6.0)
     nio4r (2.5.8)
+    nokogiri (1.13.8-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.13.8-x86_64-darwin)
       racc (~> 1.4)
     oauth2 (1.4.10)
@@ -284,7 +286,11 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
+<<<<<<< HEAD
   ruby
+=======
+  arm64-darwin-21
+>>>>>>> main
   x86_64-darwin-21
 
 DEPENDENCIES
@@ -321,4 +327,4 @@ RUBY VERSION
    ruby 2.7.4p191
 
 BUNDLED WITH
-   2.3.17
+   2.3.14

@@ -18,7 +18,14 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ml-auto">
           <img src="https://i.imgur.com/nLKWMX8.png" alt="logo" width="82.5" height="70.1">
+                <% if current_user  %>
+                  <% @user_location = GeoFacade.create_location %>
+                  &#128205 <%= "#{@user_location.city}, #{@user_location.state}" %>
+              <% end %>
           <a class="navbar-brand"><%= link_to "Home", root_path, method: :get, class: "nav-item nav-link" %></a>
+              <% if current_user %>
+              <%= link_to "Dashboard", users_dashboard_path, method: :get, class: "nav-item nav-link" %>
+              <% end %>
         </div>
         <div class="navbar-nav ms-auto">
           <a class="navbar-brand">

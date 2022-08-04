@@ -18,8 +18,8 @@
 ## About This Project
 **[View the Live Site](http://bone-be.herokuapp.com/)**
 **Bone** is a fullstack service-oriented application that provides dogs and their owners a safe way to connect for playdates and other events, because dogs deserve a social life too.
-
-Built with **Ruby on Rails** on the front-end, it employs Google OAuth, authorization, and session features. Bone utilizes **Ruby on Rails** with **PostgreSQL** database to store its relational data on the back-end.
+ 
+Built with **Ruby on Rails** on the front-end, it employes authentication, authorization, and session features. Bone utilizes **Ruby on Rails** with **PostgreSQL** database to store its relational data on the back-end.
 
 
 
@@ -52,7 +52,7 @@ Built with **Ruby on Rails** on the front-end, it employs Google OAuth, authoriz
       ```
     - *The Google Maps Database API* endpoints are used to find a dog park between users who have matched.
       ```
-      https://developers.google.com/maps
+      
       ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -130,7 +130,11 @@ $ rails s
 <p>
   <img src="https://img.shields.io/badge/git-F05032.svg?&style=for-the-badge&logo=git&logoColor=white" />
    <img alt="GitHub" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/>
+<<<<<<< HEAD
   <img alt="Heroku" src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"/>
+=======
+  <img alt="Heroku" src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"/> 
+>>>>>>> main
    <img src="https://img.shields.io/badge/Atom-66595C.svg?&style=for-the-badge&logo=atom&logoColor=white" /><br />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1.svg?&style=for-the-badge&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/postico-4169E1.svg?&style=for-the-badge&logo=Postico&logoColor=white" />  
@@ -143,7 +147,11 @@ $ rails s
   <img src="https://img.shields.io/badge/launchy-E9573F.svg?&style=for-the-badge&logo=rubygems&logoColor=white" />  
   <img src="https://img.shields.io/badge/orderly-E9573F.svg?&style=for-the-badge&logo=rubygems&logoColor=white" />  
   <img src="https://img.shields.io/badge/pry-E9573F.svg?&style=for-the-badge&logo=rubygems&logoColor=white" /><br />
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> main
   <img src="https://img.shields.io/badge/capybara-E9573F.svg?&style=for-the-badge&logo=rubygems&logoColor=white" />
   <img src="https://img.shields.io/badge/faraday-E9573F.svg?&style=for-the-badge&logo=rubygems&logoColor=white" />
   <img src="https://img.shields.io/badge/vcr-E9573F.svg?&style=for-the-badge&logo=rubygems&logoColor=white" /><br />
