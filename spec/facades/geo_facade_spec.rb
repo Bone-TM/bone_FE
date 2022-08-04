@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Geo Facade' do
-  it 'returns a single geo object' do
+  xit 'returns a single geo object' do
     geo = GeoFacade.create_location
 
     expect(geo.city).to be_a String

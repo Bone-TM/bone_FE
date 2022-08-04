@@ -1,16 +1,14 @@
 <h1>Update <%= @user.name%>'s Info</h1>
 
 <%= form_with url: users_update_path, method: :get, local: true do |f| %>
+  <%= f.label :name, "Name:" %>
+  <%= f.text_field :name, value: @user.name %><br>
 
-<p><%= f.label :name, "Name:" %>
-<%= f.text_field :name, value: @user.name%></p>
+  <%= f.label :bio, "Bio:" %>
+  <%= f.text_field :bio, value: @user.bio %><br>
 
-<p><%= f.label :bio, "Bio:" %>
-<%= f.text_field :bio, value: @user.bio%></p>
+  <%= f.label :location, "Location:" %>
+  <%= f.text_field :location, value: @user.location %><br>
 
-<p><%= f.label :location, "Location:" %>
-<%= f.text_field :location, value: @user.location%></p>
-
-<%= f.submit "Update User" %>
-
+  <%= f.submit "Update User" %>
 <% end %>

@@ -1,12 +1,19 @@
 <h1>All Pets</h1>
 
-<% @pets.each do |pet| %>
-  <p> <%= link_to "#{pet.name}", "/pets/#{pet.id}", method: :get  %> </p>
-  <% @picture = DogPictureFacade.create_breed_image(pet.breed)%>
-  <% if @picture != "Breed not found (master breed does not exist)" %>
-  <p> <%= image_tag(@picture) %> </p>
+<center>
+
+  <% @pets.each do |pet| %>
+    <% @picture = DogPictureFacade.create_breed_image(pet.breed) %>
+    <% if @picture != "Breed not found (master breed does not exist)" %>
+      <div class="card" style="width: 30rem;">
+        <img class="card-img-top" src=<%= @picture %> alt="Card image cap" >
+        <div class="card-body">
+          <h5 class="card-title"><%= pet.name.capitalize %></h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="/pets/<%= pet.id %>" class="btn btn-primary">See pet details</a>
+        </div>
+      </div><br>
+    <% end %>
   <% end %>
-  <br>
-<% end %>
 
-
+</center>

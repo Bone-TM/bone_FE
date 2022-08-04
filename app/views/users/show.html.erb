@@ -1,16 +1,61 @@
+<!-- <body style="background-image: url('https://i.imgur.com/2tOTrmY.png');"> -->
+
+<div class="jumbotron">
+  <h1 class="display-4">Welcome Back, <%= @user.name.split.first %>!</h1>
+  <p class="lead">This is your personal dashboard where you can add pets to your profile, edit your info, and start matching with other dog owners.</p>
+  <hr class="my-4">
+  <p>Get started by adding a new pet to your profile here.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="<%= users_pets_new_path %>" role="button">Add a New Dog</a>
+  </p>
+</div>
+<br><br>
+
 <center>
-<h1><%= @user.name %>'s Dashboard</h1>
 
-<%= button_to "Add Dog to Profile", users_pets_new_path, method: :get %>
-<%= button_to "Update User Info", users_edit_path, method: :get %>
-<%= button_to "Find Single Dogs", pets_path, method: :get %>
+<div class="row">
+  <div class="col-sm-6" align="left">
+    <div class="card" style="width: 40rem;">
+      <div class="card-body">
+        <div class="card text-center">
+          <div class="card-header">
+            Find friends with other pet owners!
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Match. Chat. Meet.</h5>
+            <p class="card-text">Start matching with other dog owners!</p>
+            <a href="<%= pets_path %>" class="btn btn-success">Find Single Dogs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="col-sm-6" align="left">
+    <div class="card" style="width: 40rem;">
+      <div class="card-body">
+        <div class="card text-center">
+          <div class="card-header">
+            Need to update your info?
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Edit your profile here.</h5>
+            <p class="card-text">We get it, sometimes you make mistakes.</p>
+            <a href="<%= users_edit_path %>" class="btn btn-success">Edit Your Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<h4>Registered Pets:</h4>
+</center>
+
+<h1 class="display-6">Your Registered Pets: </h1>
+
 <% @user.pets.each do |pet|%>
-<h5> <%= pet.name %> </h5>
-<%@picture = DogPictureFacade.create_breed_image(pet.breed)%>
-<%= image_tag(@picture)%>
-<p> <b> <%= link_to "View Details", "/pets/#{pet.id}", method: :get %> </b> </p>
+  <%= link_to "View Details", "/pets/#{pet.id}", method: :get %>
+  <%@picture = DogPictureFacade.create_breed_image(pet.breed)%>
+  <%= image_tag(@picture)%>
 <% end %>
 <center>

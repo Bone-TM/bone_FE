@@ -1,23 +1,20 @@
 <h2>Register:</h2>
 
 <%= form_with url: register_path, local: true do |form| %>
+  <%= form.label :name, "Enter your name:" %>
+  <%= form.text_field :name, id: "Enter your name" %><br>
 
-<p><%= form.label :name, "Enter your name:" %>
-<%= form.text_field :name, id: "Enter your name" %></p>
+  <%= form.label :email, "Enter your Email:" %>
+  <%= form.text_field :email, id: "Enter your Email" %><br>
 
-<p><%= form.label :email, "Enter your Email:" %>
-<%= form.text_field :email, id: "Enter your Email" %></p>
+  <%= form.label :password, "Enter your password:" %>
+  <%= form.text_field :password, id: "Enter your password" %><br>
 
-<p><%= form.label :password, "Enter your password:" %>
-<%= form.text_field :password, id: "Enter your password" %></p>
+  <%= form.label :password_confirmation, "Confirm your password:" %>
+  <%= form.text_field :password_confirmation, id: "Confirm your password" %><br>
 
-<p><%= form.label :password_confirmation, "Confirm your password:" %>
-<%= form.text_field :password_confirmation, id: "Confirm your password" %></p>
+  <%= form.label :Location, "Enter your Location:" %>
+  <%= form.text_field :Location, id: "Enter your Location" %><br>
 
-<p><%= form.label :Location, "Enter your Location:" %>
-<%= form.text_field :Location, id: "Enter your Location" %></p>
-
-<%= form.submit "Create User" %>
-
+  <%= form.submit "Create User" %>
 <% end %>
-
