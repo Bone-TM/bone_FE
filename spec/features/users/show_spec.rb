@@ -24,9 +24,10 @@ RSpec.describe 'User Show Page' do
 
   it "shows user details" do
     visit users_dashboard_path
-    expect(page).to have_content("Jim's Dashboard")
-    expect(page).to have_button("Add Dog to Profile")
-    expect(page).to have_button("Update User Info")
+    expect(page).to have_content("Welcome Back, Jim!")
+    expect(page).to have_link("Add a New Dog")
+    expect(page).to have_link("Edit Your Profile")
+    expect(page).to have_link("Find Single Dogs")
     expect(page).to have_content("Registered Pets:")
   end
 
@@ -38,7 +39,7 @@ RSpec.describe 'User Show Page' do
 
   it "links to dog index page" do
     visit users_dashboard_path
-    click_button "Find Single Dogs"
+    click_link "Find Single Dogs"
     expect(current_path).to eq(pets_path)
   end
 end

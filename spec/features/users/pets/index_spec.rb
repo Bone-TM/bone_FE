@@ -15,15 +15,13 @@ RSpec.describe "Pets Index Page" do
   it "shows all registered dogs" do
     visit pets_path
     expect(page).to have_content("All Pets")
-    expect(page).to have_link("sabadog")
-    expect(page).to have_link("jimdog")
-    expect(page).to have_link("nickdog")
+    expect(page).to have_link("See pet details", count: 3)
   end
 
   it "links to specific dogs show page" do
     visit pets_path
-    click_on("sabadog")
-    expect(current_path).to eq("/pets/#{@pet2.id}")
+    click_on("See pet details", match: :first)
+    expect(current_path).to eq("/pets/#{@pet1.id}")
   end
 
 

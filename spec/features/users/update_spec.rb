@@ -19,7 +19,7 @@ RSpec.describe "User Update Page" do
 
   it "can link to a user update page" do
     visit users_dashboard_path
-    click_button "Update User Info"
+    click_link "Edit Your Profile"
     expect(current_path).to eq("/users/edit")
   end
 
