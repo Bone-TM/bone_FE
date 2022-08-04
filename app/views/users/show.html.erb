@@ -1,6 +1,6 @@
 <!-- <body style="background-image: url('https://i.imgur.com/2tOTrmY.png');"> -->
 
-<div class="jumbotron">
+<div class="jumbotron" style="color:#FFFFFF">
   <h1 class="display-4">Welcome Back, <%= @user.name.split.first %>!</h1>
   <p class="lead">This is your personal dashboard where you can add pets to your profile, edit your info, and start matching with other dog owners.</p>
   <hr class="my-4">
@@ -9,7 +9,7 @@
     <a class="btn btn-primary btn-lg" href="<%= users_pets_new_path %>" role="button">Add a New Dog</a>
   </p>
 </div>
-<br><br>
+<br><br><br>
 
 <center>
 
@@ -19,7 +19,7 @@
       <div class="card-body">
         <div class="card text-center">
           <div class="card-header">
-            Find friends with other pet owners!
+            Make friends with other pet owners!
           </div>
           <div class="card-body">
             <h5 class="card-title">Match. Chat. Meet.</h5>
@@ -51,7 +51,9 @@
 
 </center>
 
-<h1 class="display-6">Your Registered Pets: </h1>
+<br>
+
+<h1 class="display-6" style="color:#FFFFFF">Your Registered Pets: </h1>
 
 <% @user.pets.each do |pet|%>
   <%= link_to "View Details", "/pets/#{pet.id}", method: :get %>
