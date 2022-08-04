@@ -19,10 +19,9 @@ RSpec.describe "Pet Creation Page " do
 
   it "can link to the create page" do
     visit users_dashboard_path
-    click_link "Add a New Dog"
+    click_on "Add a New Dog"
 
     expect(current_path).to eq("/users/pets/new")
-    expect(page).to have_content("Add a Dog to Jim's Family")
   end
 
 end
