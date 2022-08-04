@@ -124,8 +124,6 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.8-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.13.8-x86_64-darwin)
-      racc (~> 1.4)
     oauth2 (1.4.10)
       faraday (>= 0.17.3, < 3.0)
       jwt (>= 1.0, < 3.0)
@@ -213,7 +211,7 @@ GEM
     rspec-support (3.11.0)
     rspec_junit_formatter (0.5.1)
       rspec-core (>= 2, < 4, != 2.12.0)
-    rubocop (1.32.0)
+    rubocop (1.33.0)
       json (~> 2.3)
       parallel (~> 1.10)
       parser (>= 3.1.0.0)
@@ -286,12 +284,7 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
-<<<<<<< HEAD
-  ruby
-=======
   arm64-darwin-21
->>>>>>> main
-  x86_64-darwin-21
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
