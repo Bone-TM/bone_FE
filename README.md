@@ -16,7 +16,7 @@
 
 
 ## About This Project
-**[View the Live Site](http://bone-be.herokuapp.com/)**
+**[View the Live Site](http://bone-fe.herokuapp.com/)**
 **Bone** is a fullstack service-oriented application that provides dogs and their owners a safe way to connect for playdates and other events, because dogs deserve a social life too.
  
 Built with **Ruby on Rails** on the front-end, it employes authentication, authorization, and session features. Bone utilizes **Ruby on Rails** with **PostgreSQL** database to store its relational data on the back-end.
