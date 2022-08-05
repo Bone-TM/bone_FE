@@ -21,14 +21,6 @@
  
 Built with **Ruby on Rails** on the front-end, it employes authentication, authorization, and session features. Bone utilizes **Ruby on Rails** with **PostgreSQL** database to store its relational data on the back-end.
 
-
-
-
-## Demo
-
-[Add live demo of site here once finished]
-
-
 ## Key Features
   - **Pages**
     - Welcome page
@@ -41,16 +33,19 @@ Built with **Ruby on Rails** on the front-end, it employes authentication, autho
     - Dog Show page
     - Dog Match page
   <br>
+  
   - **API Consumption**
-    - *The Dog Breeds Database API* endpoints are used render dog breed data and images to the user.
+    - The Dog Breeds Database API endpoints are used render dog breed data and images to the user.
       ```
        https://dog.ceo/dog-api/documentation/
       ```
-    - *The Dog Facts Database API* endpoints are used to render random dog facts on the landing page.
+    - The Dog Facts Database API endpoints are used to render random dog facts on the landing page.
       ```
       https://kinduff.github.io/dog-api/
       ```
-    - *The Google Maps Database API* endpoints are used to find a dog park between users who have matched.
+    - Geoservice API endpoints are used to display the users current location once logged in.
+      ```
+      https://rapidapi.com/natkapral/api/ip-geo-location/
       ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
