@@ -5,7 +5,6 @@
   <summary><strong>Table of Contents</strong></summary>
   <ul>
     <li><a href="#about-this-project">About This Project</a></li>
-    <li><a href="#demo">Demo</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#key-features">Key Features</a></li>
     <li><a href="#tech-stack">Tech Stack</a></li>
@@ -19,7 +18,7 @@
 **[View the Live Site](http://bone-fe.herokuapp.com/)**
 **Bone** is a fullstack service-oriented application that provides dogs and their owners a safe way to connect for playdates and other events, because dogs deserve a social life too.
  
-Built with **Ruby on Rails** on the front-end, it employes authentication, authorization, and session features. Bone utilizes **Ruby on Rails** with **PostgreSQL** database to store its relational data on the back-end.
+Built with **Ruby on Rails** on the front-end, it employes authentication, authorization, and session features. Bone utilizes **Ruby on Rails** with **PostgreSQL** database to store its relational data on the [back-end](https://github.com/Bone-TM/bone_BE).
 
 ## Key Features
   - **Pages**
@@ -156,12 +155,6 @@ $ rails s
   <img src="https://img.shields.io/badge/MVC-b8b018.svg?&style=for-the-badge&logo=MVC&logoColor=white" />
   <img src="https://img.shields.io/badge/REST-33b818.svg?&style=for-the-badge&logo=REST&logoColor=white" />  
 </p>
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Database Diagram
-
-![bone_be_diagram](https://user-images.githubusercontent.com/65498038/182235874-34c5055a-1b6e-46eb-adc6-ba4e2300029f.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
