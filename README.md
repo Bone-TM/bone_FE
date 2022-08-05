@@ -30,8 +30,9 @@ Built with **Ruby on Rails** on the front-end, it employes authentication, autho
     - Edit/update User Registration page
     - New Dog Registration page
     - Edit/update Dog Registration page
-    - Dog Show page
-    - Dog Match page
+    - Dog Index Page
+    - Dog Show Page
+
   <br>
   
   - **API Consumption**
